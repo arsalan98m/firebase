@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    Email:
+    <input type="email" placeholder="Enter email" name="email" id="email" />
+    Password:
+    <input
+      type="password"
+      placeholder="Enter password"
+      name="password"
+      id="password"
+    />
+
+    <br />
+    <br />
+    <button onClick="signUp()">Sign up</button>
+
+    <br />
+    <br />
+    <br />
+    <button onClick="signIn()">Sign in</button>
+
+    <br />
+    <br />
+    <br />
+
+    <button onClick="signOut()">Signout</button>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAgZhfJxE4wd4RjCCCl68sJBQ_7o0KYXUY",
+        authDomain: "testing-3a180.firebaseapp.com",
+        databaseURL: "https://testing-3a180.firebaseio.com",
+        projectId: "testing-3a180",
+        storageBucket: "testing-3a180.appspot.com",
+        messagingSenderId: "595177126104",
+        appId: "1:595177126104:web:97aa28e5751de967043fad",
+        measurementId: "G-DHBNQVYV39",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
